@@ -8,7 +8,7 @@
 
 #define Stack_destroy(S) List_destory((S))
 
-#define Stakc_count(S) List_count((S))
+#define Stack_count(S) List_count((S))
 
 #define Stack_push(S, V) List_push((S), (V))
 

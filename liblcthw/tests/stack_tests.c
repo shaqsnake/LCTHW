@@ -38,7 +38,7 @@ char *test_push_pop()
 
     for (i = NUM_TESTS-1; i>=0; i--) {
         char *val = Stack_pop(stack);
-        mu_assert(val == test[i], "Wrong value on pop.");
+        mu_assert(val == tests[i], "Wrong value on pop.");
     }
 
     mu_assert(Stack_count(stack) == 0, "Wrong count after pop.");

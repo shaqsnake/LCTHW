@@ -32,7 +32,7 @@ build:
 # The Unit Tests
 .PHONY: tests
 #tests: CFLAGS += $(TARGET)
-tests: LDLIBS += $(TARGET)
+tests: LDLIBS += $(TARGET) -lm
 tests: $(TESTS)
 	sh ./tests/runtests.sh
 
